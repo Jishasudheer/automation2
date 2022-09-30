@@ -9,7 +9,7 @@ get btn_createAnAccount(){
     return $("#SubmitCreate");
 }
 get radio_gender(){
-    return $("#uniform-id_gender1")
+    return $(".radio-inline")
 }
 get txtName(){
     return $("#customer_firstname");
@@ -89,13 +89,15 @@ get txtPasswordForSignIn(){
     return $("#passwd");
 }
 get btnSubmitLogIn(){
-    return $("#submitLogin");
+    return $("#SubmitLogin");
 }
-    
+get btnlogOut(){
+    return $('.logout');
+}   
 
 //Actions
 
-createAccount= async(emailId)=> {
+createAccount= async(emailId,address)=> {
 
 await this.txtEmailIDForAccountCreation.waitForExist({ timeout:100000 });
 await this.txtEmailIDForAccountCreation.setValue(emailId);
@@ -106,8 +108,9 @@ const gender1=await this.radio_gender;
 await  gender1.waitForExist({timeout:15000});
 await this.radio_gender.click();
 console.log("gender is fine");
-await this.txtFirstName.setValue(address.firstName);
-await this.txtLastNam.setValue(address.lastName);
+
+await this.txtName.setValue(address.firstName);
+await this.txtLastName.setValue(address.lastName);
 await this.txtEmail.setValue(emailId);
 await this.txtPassword.setValue("password123");
 
@@ -130,11 +133,17 @@ await this.txtAddressAlias.setValue("My Address");
 await this.btnRegister.click();
 
 
+};
+//SignIn using new credentials
+signIn=async(username)=>{
+    await this.txtEmailForSignIn.setValue(username);
+    await this.txtPassword.setValue("password123");
+    await this.btnSubmitLogIn.click();
 }
-
-
-
-
+signOut=async()=>{
+    await this.btnlogOut.click();
+    console.log("logout successfull");
+}
 }
 
 export default new AuthPage();

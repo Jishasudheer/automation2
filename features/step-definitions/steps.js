@@ -28,8 +28,24 @@ Then (/^Create an account with random username$/,async()=>{
        address1:faker.address.buildingNumber(),
        address2:faker.address.countryCode(),
    };
-   
-  await authPage.createAccount(emailId);
+   global.SharedVariable.email=emailId;
+   global.SharedVariable.address=addressObj;
+  await authPage.createAccount(emailId,addressObj);
+});
+
+Given(/^I am on the sign in page$/,async()=>{
+   if( await homePage.btn_signOut.isExisting()){
+      await authPage.signOut();
+   }
+  await expect(homePage.btn_SignIn).toBeExisting();
+  await expect(homePage.logo_Img).toBeExisting();
+  await expect(homePage.contact_Link).toBeExisting();
+  
+  await homePage.navigateToSignUpPage();
+});
+
+Given(/^login with the newly created credentials$/,async()=>{
+   await authPage.signIn(global.SharedVariable.email);
 });
 
 

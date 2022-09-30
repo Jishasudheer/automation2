@@ -1,0 +1,178 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664534836034' stop='1664534866707'>
+    <name>SignUp,SignIn and Purchase the Product: TC002-Sign in with newly created credentials</name>
+    <title>SignUp,SignIn and Purchase the Product: TC002-Sign in with newly created credentials</title>
+    <test-cases>
+        <test-case start='1664534836034' status='passed' stop='1664534836034'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.62'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1664534836035' status='broken' stop='1664534866706'>
+            <name>Given I am on the sign in page</name>
+            <title>Given I am on the sign in page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.62'/>
+            </parameters>
+            <steps>
+                <step start='1664534836036' status='passed' stop='1664534836056'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='d04c3833-c2a8-4653-b2e4-5b0b0d6bea0b-attachment.json' type='application/json' size='51'/>
+                        <attachment title='Response' source='66250b77-19d4-447e-a862-72361ec30c62-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664534836059' status='passed' stop='1664534836077'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='fd323b74-c61c-4211-8f7a-a26b8d183e89-attachment.json' type='application/json' size='51'/>
+                        <attachment title='Response' source='fe6649cb-b93e-40f3-a5be-7a89a6f85dac-attachment.json' type='application/json' size='93'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664534836080' status='passed' stop='1664534836096'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='a27e6be8-1c27-456a-b910-9d16e2c12775-attachment.json' type='application/json' size='51'/>
+                        <attachment title='Response' source='90c5b0f4-8c5c-4adc-ad30-62ab5faa4cf8-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664534836103' status='passed' stop='1664534866544'>
+                    <name>POST /session/:sessionId/element/3de0cc96-45bb-440e-9c4c-80008a3be2f1/click</name>
+                    <title>POST /session/:sessionId/element/3de0cc96-45bb-440e-9c4c-80008a3be2f1/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664534866547' status='passed' stop='1664534866568'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='1caa9fd3-37d2-46c5-9cca-1b1585f4ae4c-attachment.json' type='application/json' size='84'/>
+                        <attachment title='Response' source='88e709aa-a245-45cb-9321-f5a0e822a245-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664534866573' status='passed' stop='1664534866593'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='d488e7a0-3d80-413a-bca7-c5eb2bc65390-attachment.json' type='application/json' size='84'/>
+                        <attachment title='Response' source='72812ab7-8b5f-47c7-a874-dcc296540b88-attachment.json' type='application/json' size='93'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664534866597' status='passed' stop='1664534866613'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='0b6d3666-3c26-4c27-a128-04f17d200be3-attachment.json' type='application/json' size='64'/>
+                        <attachment title='Response' source='690b155c-a077-47a6-894f-e53684bff9b1-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664534866616' status='passed' stop='1664534866655'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='12204ef0-276c-47ac-8107-5a90fe04606a-attachment.json' type='application/json' size='64'/>
+                        <attachment title='Response' source='ece89748-8fc3-4353-aa43-8968e142773b-attachment.json' type='application/json' size='93'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664534866659' status='passed' stop='1664534866677'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='71fa4be7-4136-4c11-bb68-b2f4280772bb-attachment.json' type='application/json' size='57'/>
+                        <attachment title='Response' source='8035fe1a-e4cd-4a49-b384-cee98a037ae0-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664534866682' status='passed' stop='1664534866700'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='e19e5f5f-a4c4-41dd-b4fa-f5b7ad9fb840-attachment.json' type='application/json' size='57'/>
+                        <attachment title='Response' source='1ebba757-53ec-4a89-9934-b8356779dea2-attachment.json' type='application/json' size='93'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: _home.default.navigateToLogInPage is not a function</message>
+                <stack-trace>TypeError: _home.default.navigateToLogInPage is not a function
+                    at World.&lt;anonymous> (C:\Users\JishaKR\Project\learning curve\sample-automation\automation2\features\step-definitions\steps.js:52:23)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1664534866706' status='pending' stop='1664534866706'>
+            <name>When login with the newly created credentials</name>
+            <title>When login with the newly created credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.62'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1664534866707' status='broken' stop='1664534866707'>
+            <name>Then I shall verify the address information in my addresses</name>
+            <title>Then I shall verify the address information in my addresses</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.62'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "I shall verify the address information in my addresses" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I shall verify the address information in my addresses" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(C:\Users\JishaKR\Project\learning curve\sample-automation\automation2\features\onlineshopping.feature):1:1
+                	at Scenario(TC002-Sign in with newly created credentials):8:3
+                	at Step(I shall verify the address information in my addresses):11:5
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1664534866707' status='passed' stop='1664534866707'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.62'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
