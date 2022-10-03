@@ -28,9 +28,9 @@ class MyAccount{
     navigateToAddress=async()=>{
         
         await this.btnMyAddress.click();
-        // expect(myaccountPage.txtGetAddressName.toBeExisting());
-    expect(myaccountPage.txtAddressCompany.toBeExisting());
-    expect(myaccountPage.txtAddress2.toBeExisting());
+        expect(myaccountPage.txtGetAddressName.toBeExisting());
+        expect(myaccountPage.txtAddressCompany.toBeExisting());
+        expect(myaccountPage.txtAddress2.toBeExisting());
         
     }
 }
