@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#email\"}\n  (Session info: chrome=106.0.5249.62)",
+  "stacktrace": "Backtrace:\n\tOrdinal0 [0x00CA1ED3+2236115]\n\tOrdinal0 [0x00C392F1+1807089]\n\tOrdinal0 [0x00B466FD+812797]\n\tOrdinal0 [0x00B755DF+1005023]\n\tOrdinal0 [0x00B757CB+1005515]\n\tOrdinal0 [0x00BA7632+1209906]\n\tOrdinal0 [0x00B91AD4+1120980]\n\tOrdinal0 [0x00BA59E2+1202658]\n\tOrdinal0 [0x00B918A6+1120422]\n\tOrdinal0 [0x00B6A73D+960317]\n\tOrdinal0 [0x00B6B71F+964383]\n\tGetHandleVerifier [0x00F4E7E2+2743074]\n\tGetHandleVerifier [0x00F408D4+2685972]\n\tGetHandleVerifier [0x00D32BAA+532202]\n\tGetHandleVerifier [0x00D31990+527568]\n\tOrdinal0 [0x00C4080C+1837068]\n\tOrdinal0 [0x00C44CD8+1854680]\n\tOrdinal0 [0x00C44DC5+1854917]\n\tOrdinal0 [0x00C4ED64+1895780]\n\tBaseThreadInitThunk [0x777AFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77A87B5E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77A87B2E+238]\n"
+}

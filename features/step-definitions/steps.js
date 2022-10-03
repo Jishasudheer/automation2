@@ -2,6 +2,8 @@ import { Given,When,Then } from "@wdio/cucumber-framework";
 import homePage from "../pageobjects/home.page";
 import page from "../pageobjects/page";
 import authPage from "../pageobjects/auth.page";
+import myaccountPage from "../pageobjects/myaccount.page";
+import MyAccount from "../pageobjects/myaccount.page"
 //import faker from faker;
 import { faker } from '@faker-js/faker';
 Given (/^I am on the home page$/,async ()=> {
@@ -44,9 +46,15 @@ Given(/^I am on the sign in page$/,async()=>{
   await homePage.navigateToSignUpPage();
 });
 
-Given(/^login with the newly created credentials$/,async()=>{
+When(/^login with the newly created credentials$/,async()=>{
    await authPage.signIn(global.SharedVariable.email);
 });
+
+Then(/^I shall verify the address information in my addresses$/,async()=>{
+   await myaccountPage.navigateToAddress();
+  
+        
+})
 
 
 
