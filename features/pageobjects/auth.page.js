@@ -121,6 +121,7 @@ await this.txtAddressFirstName.setValue(address.firstName);
 
 await this.txtAddressLastName.setValue(address.lastName);
 await this.txtAddressCompanyName.setValue(address.companyName);
+console.log("company name is :"+address.companyName);
 await this.txtAddressCity.setValue("Singapore");
 await this.txtAddress1.setValue(address.address1);
 await this.txtAddress2.setValue(address.address2);

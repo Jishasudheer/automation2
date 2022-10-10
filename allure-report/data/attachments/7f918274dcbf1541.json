@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".radio-inline\"}\n  (Session info: chrome=106.0.5249.62)",
+  "stacktrace": "Backtrace:\n\tOrdinal0 [0x00801ED3+2236115]\n\tOrdinal0 [0x007992F1+1807089]\n\tOrdinal0 [0x006A66FD+812797]\n\tOrdinal0 [0x006D55DF+1005023]\n\tOrdinal0 [0x006D57CB+1005515]\n\tOrdinal0 [0x00707632+1209906]\n\tOrdinal0 [0x006F1AD4+1120980]\n\tOrdinal0 [0x007059E2+1202658]\n\tOrdinal0 [0x006F18A6+1120422]\n\tOrdinal0 [0x006CA73D+960317]\n\tOrdinal0 [0x006CB71F+964383]\n\tGetHandleVerifier [0x00AAE7E2+2743074]\n\tGetHandleVerifier [0x00AA08D4+2685972]\n\tGetHandleVerifier [0x00892BAA+532202]\n\tGetHandleVerifier [0x00891990+527568]\n\tOrdinal0 [0x007A080C+1837068]\n\tOrdinal0 [0x007A4CD8+1854680]\n\tOrdinal0 [0x007A4DC5+1854917]\n\tOrdinal0 [0x007AED64+1895780]\n\tBaseThreadInitThunk [0x777AFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77A87B5E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77A87B2E+238]\n"
+}

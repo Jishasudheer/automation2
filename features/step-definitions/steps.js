@@ -18,6 +18,7 @@ When(/^Navigate to SignUp Page$/,async()=>{
    console.log("Navigated to SignUp page");
 });
 
+
 Then (/^Create an account with random username$/,async()=>{
    console.log("account creation");
    const randomStr=Math.random().toString(36).substring(2,5);
@@ -26,7 +27,7 @@ Then (/^Create an account with random username$/,async()=>{
    const addressObj={
        firstName:faker.name.firstName(),
        lastName:faker.name.lastName(),
-       company:faker.company.name(),
+       companyName:faker.company.name(),
        address1:faker.address.buildingNumber(),
        address2:faker.address.countryCode(),
    };
@@ -50,11 +51,14 @@ When(/^login with the newly created credentials$/,async()=>{
    await authPage.signIn(global.SharedVariable.email);
 });
 
-Then(/^I shall verify the address information in my addresses$/,async()=>{
-   await myaccountPage.navigateToAddress();
-  
+Given(/^I shall verify the address information in my addresses$/,async()=>{
+   await MyAccount.navigateToAddress();
         
-})
+});   
+
+Given(/^I add below products to cart$/,async(table)=>{
+   
+});
 
 
 

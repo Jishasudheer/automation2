@@ -1,3 +1,4 @@
+import { textToBePresentInElement } from "wdio-wait-for";
 import myaccountPage from "./myaccount.page"
 class MyAccount{
     get btnMyAddress(){
@@ -9,29 +10,40 @@ class MyAccount{
     get btnPersonalInfo(){
         return $(".icon-user");
     }
-    get btnWishList(){
+    get btnMyWishList(){
         return $(".icon-heart");
     }
-    // get txtGetAddressName(){
-    //     return $(".address_name");
-    // }
-    get txtAddressCompany(){
-        return $(".address_company");
+
+    //Address Page
+    get btnPageHeading(){
+        return $(".page-heading");
     }
+    get txtGetAddressName(){
+        return $(".last_item.item.box li:nth-child(2)");
+    }
+    get txtAddressCompany(){
+      
+        return $(".address_company");
+    }    
     get txtAddress1(){
         return $(".address_address1");
     }
     get txtAddress2(){
         return $(".address_address2");
     }
+
     //actions
     navigateToAddress=async()=>{
         
         await this.btnMyAddress.click();
-        expect(myaccountPage.txtGetAddressName.toBeExisting());
-        expect(myaccountPage.txtAddressCompany.toBeExisting());
-        expect(myaccountPage.txtAddress2.toBeExisting());
-        
+        const name= await this.txtGetAddressName.getText();
+        const companyAddress=await this.txtAddressCompany.getText();
+        const address1=await this.txtAddress1.getText();
+        const address2=await this.txtAddress2.getText(); 
+        expect(name).toBe(global.SharedVariable.address.firstName+" "+global.SharedVariable.address.lastName);
+        expect(companyAddress).toBe(global.SharedVariable.address.companyName);
+        expect(address1).toBe(global.SharedVariable.address.address1);
+        expect(address2).toBe(global.SharedVariable.address.address2);
     }
 }
 export default new MyAccount();
